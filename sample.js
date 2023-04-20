@@ -286,7 +286,7 @@ numVar2++;
 numVar2++;
 2
 console.log(numVar2);
-3 debugger eval code:1:9
+//3 debugger eval code:1:9
 undefined
 const exp1=100%50;
 undefined
@@ -299,7 +299,7 @@ undefined
 const exp5=!exp4;
 undefined
 console.log(exp5);
-false debugger eval code:1:9
+//false debugger eval code:1:9
 undefined
 exp1
 0
@@ -358,3 +358,64 @@ undefined
 result
 
 20
+
+//Javascript conditionals
+
+if('some string'==='another string'){
+  console.log('the strings are equal');
+}
+undefined
+if('some string'==='another string'){
+  console.log('the strings are equal');
+    
+}else{
+  console.log('the strings are not equal');…
+//the strings are not equal debugger eval code:5:12
+undefined
+const myExpress =(20==20)&&(50===50);
+undefined
+myExpress
+true
+const firstNum=20;
+const secondNum=10;
+undefined
+const JsExpress=firstNum>secondNum;
+undefined
+if (JsExpress){
+ console.log('this expression is true');
+}
+//this expression is true debugger eval code:2:11
+undefined
+if (JsExpress){
+ console.log('this expression is true');
+}else{
+ console.log('this expression is false');
+}
+//this expression is true debugger eval code:2:11
+undefined
+if (JsExpress){
+ console.log('this expression is true');
+}else if (firstnumber >0){
+ console.log('the expression is false and the firstNumber is greater than 0');
+}else{
+
+}}
+//this expression is true
+
+
+//Javascript loops
+for (let i =0;i<100;i++){
+  console.log(i)//type your code here
+}
+
+//example
+const arr2=['rjjiure','jkwehrwh','uwriuureib','ikwebiue',20,40,50];
+for (let i=0;i<arr2.length;i++){
+  if(typeof arr2[i]==='number'){
+    console.log(arr2[i]);
+  }
+}
+20// debugger eval code:3:13
+40 //debugger eval code:3:13
+50
+//Javascript Functions
