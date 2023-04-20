@@ -439,3 +439,12 @@ function myFunc1(par1,par2){
 myFunc1(20,'some string');
 20 //debugger eval code:2:12
 //some string
+const anotherFunc= function(){
+  console.log('another thing')
+}
+undefined
+typeof anotherFunc
+"function"
+anotherFunc();
+//another thing debugger eval code:2:11
+undefined 
