@@ -418,4 +418,24 @@ for (let i=0;i<arr2.length;i++){
 20// debugger eval code:3:13
 40 //debugger eval code:3:13
 50
+
+
 //Javascript Functions
+function myFunc(){
+  console.log('hello worlds, this is my function');
+}
+undefined
+myFunc();//invoke or call the function
+//hello worlds, this is my function
+(function anotherFunc(){
+  console.log('hello');
+})();//imediately invoked function
+hello
+function myFunc1(par1,par2){
+  console.log(par1);
+  console.log(par2);  
+}
+
+myFunc1(20,'some string');
+20 //debugger eval code:2:12
+//some string
