@@ -448,3 +448,92 @@ typeof anotherFunc
 anotherFunc();
 //another thing debugger eval code:2:11
 undefined 
+
+// arrow function functionalities
+const arrowFunc = () =>{
+  console.log('I am an arrow function');
+}
+undefined
+arrowFunc()
+//I am an arrow function debugger eval code:2:11
+undefined
+const MyFunc = () =>{
+  console.log('something');
+}
+undefined
+MyFunc()
+//something debugger eval code:2:11
+undefined
+const result =MyFunc();
+//something debugger eval code:2:11
+undefined
+result
+undefined
+const returnFunc = () =>{
+  const a =20;
+}
+undefined
+const returnFunc1 = () =>{
+  const a =20;
+} 
+
+//RETURN VALUES
+myFunc();
+20
+const myNumber =20;
+undefined
+let myfunction =()=>{
+  if(myNumber< 15){
+   return 'return the function early'
+    
+  }
+}
+undefined
+let myfunction1 =()=>{
+  if(myNumber< 15){
+   return 'return the function early'
+    
+  }
+return 40;
+}
+undefined
+myfunction1
+function myfunction1()
+
+myfunction1();
+40 
+
+function myFunction(){
+  return 20;
+}
+undefined
+myFunction();
+20
+const alias=myFunction;
+undefined
+alias();
+20
+const myObj ={
+  prop1:50,
+  prop2:myFunction
+}
+undefined
+myObj.prop2()
+20
+
+//more functions 
+const myString ='zach';
+undefined
+myString.replace('h','k');
+"zack"
+const newName=myString.replace('h','k');
+undefined
+newName;
+"zack"
+myString.toUpperCase();
+"ZACH"
+let str = 'hello world';
+undefined
+const result =str.toUpperCase().split(' ');
+undefined
+result
