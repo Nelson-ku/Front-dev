@@ -522,7 +522,7 @@ myObj.prop2()
 20
 
 //more functions 
-const myString ='zach';
+//const myString ='zach';
 undefined
 myString.replace('h','k');
 "zack"
@@ -534,6 +534,61 @@ myString.toUpperCase();
 "ZACH"
 let str = 'hello world';
 undefined
-const result =str.toUpperCase().split(' ');
+//const result =str.toUpperCase().split(' ');
 undefined
 result
+// reversing a string 
+const str ='hello';
+undefined
+str.split('');
+(5) ['h', 'e', 'l', 'l', 'o']
+array= str.split("");
+(5) ['h', 'e', 'l', 'l', 'o']
+const reversed=array.reverse();
+    
+undefined
+reversed
+(5) ['o', 'l', 'l', 'e', 'h']
+const final =reversed.join("")
+undefined
+final
+'olleh'
+
+// check if a number is even or odd
+function even_or_odd(number){
+  if(number%2 ===0){
+      return 'Even';
+  }else{
+      return "Odd";
+  }
+}
+undefined
+even_or_odd(10);
+'Even'
+// check the number of vowels a e i o u in a string
+function getCount(str){
+  let vowelsCount =0;
+  const arr=str.split("");
+
+  for(let i=0;i<arr.length;i++){
+      switch(arr[i]){
+          case 'a':
+              vowelsCount++;
+              break;
+          case 'e':
+              vowelsCount++;
+              break;
+          case 'i':
+              vowelsCount++;
+              break;
+          case 'o':
+              vowelsCount++;
+              break;
+          case 'u':
+              vowelsCount++;
+              
+              
+  }
+  
+  return vowelsCount;
+}
