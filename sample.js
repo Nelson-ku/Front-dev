@@ -592,3 +592,53 @@ function getCount(str){
   
   return vowelsCount;
 }
+//this a function to turn a number paased into a function into a negative
+function makeNegative(num){
+  if(num<0){
+    return num;
+  } else{
+    return num *-1;
+  }
+}
+// finding the smallest number in an array
+class SmallestIntergerFinder{
+  findSmallestInt(arrayOfNumbers){
+
+    let smallestNumber ;
+
+     for(let i=0; i<arrayOfNumbers.length; i++){
+      const individualNumber= arrayOfNumbers[i];
+       if (i===0){
+        smallestNumber= individualNumber;
+       }
+      if (individualNumber<smallestNumber){
+        smallestNumber=individualNumber;
+
+      }
+     }
+     return smallestNumber;
+  }
+}
+
+var summation =function(num){
+
+  let sum =0;
+  for(let i=0; i<num ;i++){
+     sum=sum+i;
+  }
+  return sum;
+}
+//find an average of grades
+
+function getAverage(scoreArr){
+  //average sum
+  const count=scoreArr.length;
+
+  let sum =0;
+
+  for(let i=0;i<count; i++){
+     sum= sum +scoreArr[i];
+  }
+
+  return Math.floor(sum/count);
+}
