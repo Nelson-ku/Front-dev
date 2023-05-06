@@ -642,3 +642,94 @@ function getAverage(scoreArr){
 
   return Math.floor(sum/count);
 }
+
+//rock paper scissors game
+const rockPaperScissors=(player1,player2)=>{
+  if (player1 ==='rock'){
+   if (player2 ==='rock'){
+        return 'Draw';
+}
+ if (player2 ==='paper'){
+    return 'Player 2 won!';
+}
+ if (player2 ==='scissors'){
+    return 'Player 1 won !';
+}
+}
+ if (player1 ==='paper'){
+ if (player2 ==='rock'){
+        return 'player 2 won !';
+}
+ if (player2 ==='paper'){
+    return 'Draw!';
+}
+ if (player2 ==='scissors'){
+    return 'Player 2 won !';
+}
+}
+ if (player1 ==='scissors'){
+ if (player2 ==='rock'){
+        return 'player 2 won!';
+}
+ if (player2 ==='paper'){
+    return 'Player 1 won!';
+}
+ if (player2 ==='scissors'){
+    return 'Draw !'
+}
+}
+};
+
+//removing the first and the last characters of a string
+const str = 'hello';
+
+str.length
+5
+str.substr(1,str.length-2);
+"ell"
+function removeChar(str){
+
+const lengthOfString =str.length;
+return str.substr(1, lengthOfString-2);
+};
+
+
+removeChar('hello nelson')
+
+"ello nelso"
+
+//function to calculate the sum of all positive integers in array 
+function positiveNum(arr){
+  let sum=0;
+    for(let i =0 ;i<arr.length; i++){
+      if(arr[i]>0){
+      sum=sum+arr[i];
+      }
+    }
+  return sum;
+  }
+  //test case 
+  positiveNum([-15,1,3,4,5,6,-10,0]);
+  19
+  //basic math operation
+  function basicOp2(operation,value1,value2){
+    let result;
+   switch (operation){
+     case '+':
+       result = value1 +value2;
+       break;
+     case '-':
+       result = value1 -value2;
+       break;
+     case '*':
+       result = value1 *value2;
+       break;
+     case '/':
+       result = value1 /value2;
+       break;
+       
+   }
+     return result;
+   };
+
+   //alternative would be eval()
