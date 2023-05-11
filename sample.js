@@ -732,4 +732,39 @@ function positiveNum(arr){
      return result;
    };
 
-   //alternative would be eval()
+   //removing spaces in a string
+   function noSpace1(str){
+    const arr =str.split(" ");
+    let newArray =[];
+    for (let i=0; i<arr.length;i++){
+        const trimmedString=arr[i].trim();
+        newArray.push(trimmedString)
+        
+    }
+    const finalStr=newArray.join('');
+    return finalStr;
+    }
+    noSpace1(' nelson mandela ');
+    #"nelsonmandela"
+//dragon hero challenge
+function hero2(bullets ,dragons){
+  const result =bullets/dragons >=2 ?true :false;
+ }
+
+ //finding the sum in two arrays
+ function arrayPlusArray(arr1, arr2){
+
+  let sum =0;
+    for(let i=0; i<arr1.length;i++){
+     const arr1Value=arr1[i];
+     const arr2Value=arr2[i];
+  
+     const addedValue =arr1Value +arr2Value;
+     sum =sum +addedValue;
+  }
+  return sum;
+  }
+  //converting a year in it century equivalent
+  function century(year){
+    return Math.ceil(year/100);
+   }
