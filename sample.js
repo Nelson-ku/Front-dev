@@ -768,3 +768,77 @@ function hero2(bullets ,dragons){
   function century(year){
     return Math.ceil(year/100);
    }
+   //javascript methods
+const arr=[1,2,3];
+undefined
+arr.pop();
+3
+arr
+(2) [1, 2]
+const strArray =['hello', 'world'];
+undefined
+strArray.join("");
+'helloworld'
+//call back functions
+function myCallback(someNumber){
+  return someNumber *2;
+}
+function mainFunction(randomNumber,shouldCall,callback){
+   let result=randomNumber;//in this example result ===20
+   //In this example,shouldCall is 'true', so we do reach the call back
+       if(shouldCall){
+           //in this example, 'call back' represents 'myCallback'from above
+           result=callback(randomNumber);
+       }
+   //since 'result' was re-assinged by the callback function, returns 40
+   return result;
+}
+mainFunction(20 ,true ,myCallback);//returns 40
+40
+mainFunction(20,true,function(num){
+  return num*2;
+})
+40
+mainFunction(20,true, (num)=>{
+  return num *2;
+})
+40
+mainFunction(20,true,num =>num*2)
+40
+//allows for reusability and synchronization
+const arr=[1,2,3];
+undefined
+function mycustomCallback(item){
+    return item*2;
+}
+undefined
+const newArray =arr.map(mycustomCallback);
+undefined
+arr
+(3) [1, 2, 3]
+newArray
+(3) [2, 4, 6]
+
+const strArray =['hello', 'world'];
+undefined
+strArray.map(item=>item[0])
+(2) ['h', 'w']
+//javascript primitive
+
+//javascript dates
+Date.now();
+1683959861998
+const myDate = new Date();
+undefined
+myDate
+Sat May 13 2023 09:38:16 GMT+0300 (East Africa Time)
+myDate.toString()
+'Sat May 13 2023 09:38:16 GMT+0300 (East Africa Time)'
+myDate.toISOString();
+'2023-05-13T06:38:16.728Z'
+myDate.getDate();
+13
+myDate.getMonth();
+4
+myDate.getFullYear();
+2023
