@@ -842,3 +842,98 @@ myDate.getMonth();
 4
 myDate.getFullYear();
 2023
+//Regular expressions;
+const emailValid= new RegExp('^,+@.+\..+$');
+undefined
+const userInput= 'inelso.com';
+undefined
+const inValid =emailValid.test(userInput);
+undefined
+inValid
+false
+
+
+const regex = new RegExp('fovorite');
+undefined
+const string ='my fovorite color is blue';
+undefined
+const strings ='my fovorite color is black';
+undefined
+regex.test(string);
+true
+regex.test(strings);
+true
+//regular expressions are case sensitive
+/[a-z]+/.exec(string)
+['my', index: 0, input: 'my fovorite color is blue', groups: undefined]
+/[a-z]{5}/.exec(string)
+['fovor', index: 3, input: 'my fovorite color is blue', groups: undefined]
+/[a-z]/.test(string)
+true
+/[0-9]/.test(string)
+false
+/[A-Z]/.test(string)
+false 
+
+const str ='hello world ,2021 @ more of a string';
+undefined
+/^[a-z ]+,[0-9]+/.exec(str);
+['hello world ,2021', index: 0, input: 'hello world ,2021 @ more of a string', groups: undefined]
+/.+/.exec(str);
+['hello world ,2021 @ more of a string', index: 0, input: 'hello world ,2021 @ more of a string', groups: undefined]
+
+//Javascript string methods
+//replaceAll()
+const myString ='My Dog jumped on the bed . My dog is a bad Dog';
+undefined
+const newString =myString.replaceAll('Dog','Cat');
+undefined
+newString
+'My Cat jumped on the bed . My dog is a bad Cat'
+const correctStr =myString.replaceAll(/[Dd]{1}og/g, 'cat');
+undefined
+correctStr
+'My cat jumped on the bed . My cat is a bad cat'
+//toUppercase
+const myString= 'some string';
+undefined
+myString.toUpperCase();
+'SOME STRING'
+myString.substring(5, 7);
+'st'
+const result =myString[0].toUpperCase() + myString.substring(1 ,myString.length);
+undefined
+result
+'Some string'
+//trim method
+//removal of white space from data
+
+//assuming we have the data below
+const externalData1 =[
+  {
+  title: 'how to code   ',
+  author :' zach'
+  },
+  {title: 'what is vim?',
+   author:'  zach'
+  },
+  {title: 'how do loops work in Javascript?  ',
+   author:'  zach'
+  }
+];
+//we can remove the blank spaces using the trim method as below
+for (let i=0;i<externalData1.length;i++){
+  const currentTitle=externalData1[i].title;
+  const currentAuthor=externalData1[i].author;
+  externalData1[i].title= currentTitle.trim();
+  externalData1[i].author=currentAuthor.trim();
+}
+//output
+externalData1
+
+
+{title: 'how to code', author: 'zach'}
+
+{title: 'what is vim?', author: 'zach'}
+
+{title: 'how do loops work in Javascript?', author: 'zach'}
