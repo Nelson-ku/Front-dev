@@ -937,3 +937,86 @@ externalData1
 {title: 'what is vim?', author: 'zach'}
 
 {title: 'how do loops work in Javascript?', author: 'zach'}
+
+//Javascript methods
+const arr =[1,2,3,5,6];
+undefined
+arr.pop()
+6
+arr.pop();
+5
+arr
+Array(3) [ 1, 2, 3 ]
+
+arr.push(4,5,6)
+6
+arr
+Array(6) [ 1, 2, 3, 4, 5, 6 ];
+
+arr
+Array(6) [ 1, 2, 3, 4, 5, 6 ]
+
+const copyArr =arr.slice()
+undefined
+copyArr
+Array(6) [ 1, 2, 3, 4, 5, 6 ]
+
+const anotherCopy =arr.slice(3)
+undefined
+anotherCopy
+Array(3) [ 4, 5, 6 ]
+
+const arr = [ 1,2,'oops',4,5,6];
+undefined
+arr.splice(3,1,3.5);
+Array [ 4 ]
+
+arr
+Array(6) [ 1, 2, "oops", 3.5, 5, 6 ]
+
+arr.splice(2,1,3);
+Array [ "oops" ]
+
+arr
+Array(6) [ 1, 2, 3, 3.5, 5, 6 ]
+
+//call back functions
+
+arr
+Array(6) [ 1, 2, 3, 3.5, 5, 6 ]
+
+arr
+Array(6) [ 1, 2, 3, 3.5, 5, 6 ]
+
+arr.indexOf(3)
+2
+arr[arr.indexOf(3.5)]
+3.5 
+
+
+//the findIndex 
+
+const moreComplexArr1=[
+  {
+  firstName:'Bob',
+  lastName:'Smith'
+  },
+   {
+  firstName:'Alice',
+  lastName:'Smith'
+  },
+    {
+  firstName:'Jon',
+  lastName:'Smith'
+  },
+  {
+  firstName:'Jon',
+  lastName:'Doe'
+  }
+ ]; 
+
+ 
+ moreComplexArr1.findIndex((arrItem)=>{
+  return arrItem.lastName !=='Smith';
+})
+3 
