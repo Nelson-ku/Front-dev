@@ -1015,8 +1015,155 @@ const moreComplexArr1=[
   }
  ]; 
 
- 
+
  moreComplexArr1.findIndex((arrItem)=>{
   return arrItem.lastName !=='Smith';
 })
 3 
+// map function used in manupilating objects in javascript
+
+const Blog1=[
+  {
+  title:'how to use map () function',
+  category:'uncategorized'
+  },
+  {
+  title:'what is Javascript',
+  category:'uncategorized'
+  },
+  {
+  title:'why are you crazy enough to learn code',
+  category:'uncategorized'
+  }
+  ]
+  undefined
+  Blog1.map(arrItem =>{
+   arrItem.category='web development';
+    return arrItem;
+  })
+  Array(3) [ {…}, {…}, {…} ]
+  ​
+  0: Object { title: "how to use map () function", category: "web development" }
+  ​
+  1: Object { title: "what is Javascript", category: "web development" }
+  ​
+  2: Object { title: "why are you crazy enough to learn code", category: "web development" }
+  ​
+  length: 3
+//reduce method
+  const arr =[10,20,30,25,14];
+
+  function reducer(sum,arrItem){
+    return sum += arrItem;
+   }
+   result
+   undefined
+   const result1 =arr.reduce(reducer,0);
+   undefined
+   result1
+   99 
+   //Math methods
+
+   const myDate= new Date()
+undefined
+myDate.getDate()
+30
+Math.PI
+3.141592653589793
+Math.E
+2.718281828459045
+Math.abs(-69)
+69
+Math.ceil(Math.PI)
+4
+Math.floor(Math.PI)
+3
+Math.round(Math.PI)
+3
+Math.min(3,4,5)
+3
+Math.max(5,47,58)
+58
+
+//random method
+const randNum=Math.random();
+undefined
+randNum
+0.10958372327681132
+const largerNum=randNum*100;
+undefined
+largerNum
+10.958372327681133
+Math.floor(largerNum)
+10 
+const arr =['some','values','blah','yeah'];
+undefined
+const ranIndex=Math.floor(Math.random()*arr.length)
+undefined
+arr[ranIndex];
+"yeah"
+arr[ranIndex];
+"yeah"
+arr[ranIndex];
+"yeah" 
+//error handling
+
+//reference error
+const someVariable=20;
+undefined
+someVariable
+20
+another
+Uncaught ReferenceError: another is not defined
+
+
+//syntax error
+
+invalid javascript code
+
+//typeError
+const obj1={prop1:20};
+undefined
+const obj2={prop2:40};
+undefined
+obj1+obj2
+"[object Object][object Object]"
+obj1.prop1()
+//error handling using try and catch block
+try {
+  const num=20;
+ num.toUpperCase();
+}catch(error){
+ console.log(error instanceof TypeError);
+ console.log(error.message);
+}
+true debugger eval code:5:12
+num.toUpperCase is not a function
+//Nan null and undefined
+undefined
+const myString='some string';
+undefined
+Number('30')
+30
+Number(myString)
+NaN
+let myNum =null;
+undefined
+myNum
+null
+myNum==false
+false
+if (myNum){
+  console.log('this will not be reached');
+}else {
+ console.log('this will be reached');
+}
+//this will be reached
+undefined
+
+//undefined
+undefined
+let myBar;
+undefined
+console.log(myBar)
+undefined
